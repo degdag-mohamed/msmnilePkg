@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Build uefi for all Sm8150 devices.
+name: Build uefi for Poco X3 Pro device.
 
 # Controls when the workflow will run
 on:
@@ -32,5 +32,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: uefi-images-sm8150
+          name: uefi-images-sm8150-vayu
           path: Build/*/ci_artifacts
